@@ -40,7 +40,7 @@ namespace me.mholub.mhutils.templater
             if (GUILayout.Button("Create...", GUILayout.Width(70)))
             {
                 var moduleName = EditorUtility.SaveFilePanel("Create New Module", "Assets/Modules", "", "");
-                if (moduleName != null)
+                if (moduleName != null && moduleName.Length > 0)
                 {
                     Utils.CreateModule(moduleName, DoScripts, DoModels, DoTextures, DoMaterials);
                     
