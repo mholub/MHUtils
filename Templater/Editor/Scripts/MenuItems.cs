@@ -8,7 +8,7 @@ namespace me.mholub.mhutils.templater
 {
     public static class MenuItems
     {
-        [MenuItem("File/Templater/Create Module")]
+        [MenuItem("Assets/Create/Module")]
         static void CreateModule()
         {
             CreateModuleEditorWindow.Init();
